@@ -1,0 +1,16 @@
+.logo {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.btn {
+  background-color: transparent;
+  border-radius: 200px;
+  border-color: black;
+}
+/*# sourceMappingURL=Logo.css.map */
