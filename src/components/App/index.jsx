@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Title from '../Title';
 import Logo from '../Logo';
 import Groups from '../Groups';
+import './App.css';
 
 export default class App extends Component{
   render(){

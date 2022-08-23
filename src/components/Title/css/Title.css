@@ -1,4 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
 .title {
   text-align: center;
+  font-size: 25px;
+  font-family: 'Playfair Display';
 }
 /*# sourceMappingURL=Title.css.map */

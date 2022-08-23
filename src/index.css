@@ -1,0 +1,17 @@
+body{
+  padding: 20px 70px;
+  background: #E5E5E5;
+
+}
+
+@media (max-width: 1120px) {
+  body{
+    padding: 20px 50px;  
+  }
+}
+
+@media (max-width: 640px) {
+  body{
+    padding: 20px 40px;  
+  }
+}

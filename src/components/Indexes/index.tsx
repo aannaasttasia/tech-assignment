@@ -1,27 +1,34 @@
 import React from 'react';
 import { Component } from 'react';
 import { Index } from '../../constants/types';
+import './css/Indexes.scss';
 
-interface GroupIndexesProps {
+interface IndexesProps {
     indexes: Index[]
 }
 
-export default class GroupIndexes extends Component<GroupIndexesProps>{
-    constructor(props: GroupIndexesProps){
+export default class Indexes extends Component<IndexesProps>{
+    constructor(props: IndexesProps){
         super(props);
     }
 
     renderIndexes = (indexes: Index[]) => {
-        return indexes.map((a,i)=> {
+        return (
+        <div className='blockParent'>
+            { indexes.map((a,i)=> {
             return(
-                <div key={i}>
-                    <p>{a.name}</p>
+                <div  className="block" key={i}>
+                    <p className='name'>{a.name}</p>
                     <p>${(a.usdPriceInCents).toString()}/{(a.ethPriceInWei).toString()} ETH</p>
-                    <p>{(a.usdCapitalization).toString()}</p>
-                    <p>{(a.percentageChange).toString()}</p>
+                    <div className='inlineEl'>
+                        <p>${(a.usdCapitalization).toString()}</p>
+                        <p className='percentageChange'>{(a.percentageChange).toString()}%</p>
+                    </div>
+                    
                 </div>
             )
-        })
+        })}
+        </div>)
   };
 
     render() {

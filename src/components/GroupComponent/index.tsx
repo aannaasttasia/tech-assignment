@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import GroupIndexes from "../Indexes";
+import Indexes from "../Indexes";
 import { GroupInfo } from "../../constants/types";
 import Name from "../Name";
 
@@ -12,7 +12,7 @@ export default class GroupComponent extends Component<{ group: GroupInfo }> {
     return (
       <div>
         <Name name={props.name} />
-        <GroupIndexes indexes={props.indexes} />
+        <Indexes indexes={props.indexes} />
       </div>
     );
   };
