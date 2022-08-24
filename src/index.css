@@ -1,17 +1,17 @@
 body{
   padding: 20px 70px 80px 70px;
-  background: #E5E5E5;
+  background: #ebeded;
 
 }
 
 @media (max-width: 1120px) {
   body{
-    padding: 20px 50px;  
+    padding: 20px 50px 80px 50px;  
   }
 }
 
 @media (max-width: 640px) {
   body{
-    padding: 20px 40px;  
+    padding: 20px 40px 40px 40px;  
   }
 }
