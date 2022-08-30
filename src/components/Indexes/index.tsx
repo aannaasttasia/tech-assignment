@@ -19,7 +19,7 @@ export default class Indexes extends Component<IndexesProps> {
           return (
             <div className="block" key={i}>
               <p className="name">{a.name}</p>
-              <p>{(a.usdPriceInCents / 100).toLocaleString('en-US', {
+              <p className="togetherUsdEth">{(a.usdPriceInCents / 100).toLocaleString('en-US', {
                 style: 'currency',
                 currency: 'USD',
                 minimumFractionDigits: 0,

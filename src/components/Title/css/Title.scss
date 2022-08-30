@@ -1,6 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap');
+
 .title{
     text-align: center;
     font-size: 25px;
     font-family: 'Playfair Display';
+  }
+
+
+  @media (max-width: 750px) {
+    .title{
+      font-size: 20px;
+    }
   }
