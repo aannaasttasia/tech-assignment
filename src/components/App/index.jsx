@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Title from '../Title';
 import Logo from '../Logo';
 import Groups from '../Groups';
+import Data from '../GetData/index'
 import './App.css';
 
 export default class App extends Component{
@@ -11,6 +12,7 @@ export default class App extends Component{
       <Logo />
       <Title />
       <Groups />
+      <Data/>
       </>
     )
   }

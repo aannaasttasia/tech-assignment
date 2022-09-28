@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap');
+
+.cryptoTitle{
+    text-align: center;
+    font-size: 25px;
+    font-family: 'Playfair Display';
+    margin-top: 50px;
+  }
+
+
+.cryptoBlock {
+    box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.25), 0px 0px 5px rgba(0, 0, 0, 0.03);
+    border-radius: 10px;
+    background-color: #FFFF;
+    display: inline-block;
+    box-sizing: border-box;
+    width: calc(25% - 10px);
+    margin-top: 10px;
+    margin-left: 10px;
+    padding: 0px 20px;
+    text-align: center;
+}
+
+
+
+.cryptoPrice{
+    font-family: 'Inter';
+    font-size: 18px;
+    font-weight: 300;
+
+}
+
+.cryptoParent{
+    margin-top: -10px;
+    margin-left: -10px;  
+    margin-bottom: 30px;  
+}
+
+@media (max-width: 750px) {
+    .cryptoBlock {
+        width: calc(50% - 10px);
+      }
+}
+
+@media (max-width: 540px) {
+    .cryptoBlock {
+        width: calc(100% - 10px);
+      }
+}
