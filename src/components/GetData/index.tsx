@@ -1,12 +1,12 @@
-import React, { Component } from "react";
+import React, { Component, useState } from "react";
 import ShowData from "../ShowData/index";
 import { getData } from "./getInfo";
 import './css/GetData.scss'
 
-export default class Data extends Component<any, { datas: object }> {
+export default class Data extends Component<any, { datas: object, status:boolean }> {
   constructor(props: { datas: object }) {
     super(props);
-    this.state = { datas: [] };
+    this.state = { datas: [], status : false };
   }
 
   async componentDidMount() {
@@ -14,6 +14,7 @@ export default class Data extends Component<any, { datas: object }> {
       const dataInfo = await getData();
       this.setState({
         datas: dataInfo.data,
+        status: true
       });
       console.log(dataInfo.data);
     } catch (err) {
@@ -37,7 +38,21 @@ export default class Data extends Component<any, { datas: object }> {
       
   };
 
-  render() {
+  renderSpinner() {
+    return (
+      <div className="loader-container ">
+        <div className="spinner">
+        </div>
+      </div>
+    )
+  }
+
+  renderData() {
     return this.mappedInfo(this.state.datas);
   }
+
+  render() {
+    return (this.state.status) ? this.renderData() : this.renderSpinner();
+  }
+
 }

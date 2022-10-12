@@ -3,11 +3,12 @@ import { BigNumberish } from "ethers";
 export interface Group {
     name: string;
     indexes: BigNumberish[];
-  } 
+} 
+
   
 export interface GroupInfo {
   name: string;
-    indexes: Index[];
+  indexes: Index[];
 }
 
 export interface Index {
@@ -17,7 +18,7 @@ export interface Index {
     usdPriceInCents: number;
     usdCapitalization: number;
     percentageChange: number;
-  }
+}
   
 
   

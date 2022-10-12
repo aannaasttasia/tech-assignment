@@ -1,0 +1,45 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap");
+.balance {
+  height: 15%;
+  width: 30%;
+  top: 25px;
+  right: 30px;
+  position: fixed;
+  z-index: 1;
+  background-color: white;
+  text-align: center;
+  border: 0.5px solid #666666;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: 'Inter';
+  font-size: 20px;
+  font-weight: 200;
+  -webkit-animation: 0.7s slidein;
+          animation: 0.7s slidein;
+}
+
+@-webkit-keyframes slidein {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 30%;
+  }
+}
+
+@keyframes slidein {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 30%;
+  }
+}
+/*# sourceMappingURL=ShowBalance.css.map */

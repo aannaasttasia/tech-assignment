@@ -1,5 +1,5 @@
 import { ethers } from "ethers";
-import { CONTRACT_ADDRESS } from "./constants/constants";
+import { CONTRACT_ADDRESS, API_KEY } from "./constants/constants";
 import abi from "./constants/abi.json";
 
 const ABI = abi;
