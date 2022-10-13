@@ -1,6 +1,7 @@
 declare let window: any
 
 export async function requestAccounts(){
+    
     return await window.ethereum.request({ method: 'eth_requestAccounts' });
 }
 

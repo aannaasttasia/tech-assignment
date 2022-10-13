@@ -1,6 +1,7 @@
 import React, { Component, useState } from "react";
 import ShowData from "../ShowData/index";
 import { getData } from "./getInfo";
+import renderSpinner from './spinner'
 import './css/GetData.scss'
 
 export default class Data extends Component<any, { datas: object, status:boolean }> {
@@ -16,7 +17,6 @@ export default class Data extends Component<any, { datas: object, status:boolean
         datas: dataInfo.data,
         status: true
       });
-      console.log(dataInfo.data);
     } catch (err) {
       let errorMessage = "Failed to do something exceptional";
       if (err instanceof Error) {
@@ -38,21 +38,13 @@ export default class Data extends Component<any, { datas: object, status:boolean
       
   };
 
-  renderSpinner() {
-    return (
-      <div className="loader-container ">
-        <div className="spinner">
-        </div>
-      </div>
-    )
-  }
 
   renderData() {
     return this.mappedInfo(this.state.datas);
   }
 
   render() {
-    return (this.state.status) ? this.renderData() : this.renderSpinner();
+    return (this.state.status) ? this.renderData() : renderSpinner();
   }
 
 }

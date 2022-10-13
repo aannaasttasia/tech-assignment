@@ -3,8 +3,8 @@
 .balance{
     height: 15%;
     width: 30%;
-    top: 25px;
-    right: 30px;
+    top: 5px;
+    right: 5px;
     position: fixed;
     z-index: 1;
     background-color:rgb(255, 255, 255) ;
@@ -20,6 +20,7 @@
 }
 
 
+
 @keyframes slidein {
     from {
       width: 0%;
@@ -27,4 +28,15 @@
     to {
       width: 30%;
     }
+}
+
+@media(max-width: 700px){
+  .balance{
+    height: 10%;
+    width: 50%;
+    top: 5px;
+    right: 5px;
+
+  }
+  
 }

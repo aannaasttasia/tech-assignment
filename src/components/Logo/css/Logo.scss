@@ -46,8 +46,37 @@
   transform: translateY(2px);
 }
 
+.loader-container {
+    position: absolute;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    margin: auto 10px;
+}
 
 
+.loader {
+    width: 15px;
+    height: 15px;
+    border: 2px solid;
+    border-color: #6d6e75 transparent  ;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    animation: spin-anim 1.2s linear infinite;
+    margin-left: 10px;
+}
+@keyframes spin-anim {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
 
 @media(max-width: 700px){
     .logo{
